@@ -1,174 +1,209 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bryanna Lawton - Personal Wesbite</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Breefolio - Bryanna Lawton</title>
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="content/fullpage.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="content/examples.css" />  
+    <link rel="stylesheet" type="text/css" href="content/site.css">
+    <script type='text/javascript' src='js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='js/demo.js'></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+
+    /* Style for our header texts
+    * --------------------------------------- */
+    h1{
+        font-size: 5em;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        margin:0;
+    }
+    .intro p{
+        color: #fff;
+    }
+
+    /* Centered texts in each section
+    * --------------------------------------- */
+    .section{
+        text-align:center;
+    }
+
+    #section0{
+        background-image: url("img/skybg.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    #section1{
+        background-image: url("img/koreabg2.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    #section2{
+        background-image: url("img/dancebg.jpg");
+        
+    }
+
+    #section3{
+        background-image: url("img/koreabg3.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+
+    /* Overwriting styles for control arrows for slides
+    * --------------------------------------- */
+    .controlArrow.prev {
+        left: 50px;
+    }
+    .controlArrow.next{
+        right: 50px;
+    }
+
+
+    /* Bottom menu
+    * --------------------------------------- */
+    #infoMenu li a {
+        color: #fff;
+    }
+    </style>
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
 </head>
-
 <body>
-<!-- header section -->
-<section class="banner" role="banner">
-  <header id="header">
-    <!-- navigation section  -->
-    <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" alt="Mafolio"></a>
-      <nav class="navigation" role="navigation">
-        <ul class="primary-nav">
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Resume</a></li>
-          <li><a href="https://github.com/Dorkly">Github</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-    <!-- navigation section  -->
-  </header>
 
-  <!-- banner text -->
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-        <h1>Hi, I’m Bryanna</h1>
-        <p>Web/App Developer, Software Engineer and User Interface Designer<br>
-          Scroll to see my work!</p>
-        <!-- banner text -->
-      </div>
+<div id="fullpage">
+    <div class="section " id="section0">
+        <div class="intro">
+            <h1>Bryanna Lawton</h1>
+            <p>UI/UX , Frontend and Software Developer</p>
+        </div>
     </div>
-  </div>
-</section>
-<!-- header section -->
-<!-- description text section -->
-<section id="descripton" class="section descripton">
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1 text-center">
-      <p>Here is a sample of some of my projects from CS courses,Hackathons and student organizations</p>
-    </div>
-  </div>
-</section>
-<!-- description text section -->
-<!-- portfolio section -->
-<section id="works" class="works section no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-1.jpg" class="work-box"> <img src="images/work-1.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Hanstuff</h5>
-            <p>Webite Design in HTML and CSS</p>
-          </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1">
+                <h1>Portfolio</h1>
+                <img src="img/park.jpg" alt="Pitstop" float="left" height="500px">
+                <div class="pcontainer">
+<h1 id="top">UParkSmart - Summer 2018 </h1>
+<i style="font-size: 20px">UI/UX Designer, Front End / CS </i><br>
+<p style="font-size: 20px">A group UPS Hackathon project - A web application using ASP.NET and C# that uses an infrared sensors to detect open parking spots.Used Arduino boards to connect the IR sensors and integrate hardware and software.<p><br>
+<ul>
+  <li>Created custom interactive map of the UPS parking deck </li>
+  <li>Complete hardware and software integration within 17 hours.</li>
+</ul> 
+ </div>
         </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-2.gif" class="work-box"> <img src="images/work-2.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Pitstop</h5>
-            <p>App Development in Java</p>
-          </div>
+        <div class="slide" id="slide2">
+                <h1>Portfolio</h1>
+                <img src="img/pit.gif" alt="Pitstop" float="left">
+                <div class="pcontainer">
+<h1 id="top">Pitstop - Fall 2017  </h1>
+<i style="font-size: 20px">UI/UX Designer, Front End / CS </i><br>
+<br>
+<p style="font-size: 20px">An android application for mobile food ordering that updates the user on food trucks available on campus for any given day. When the user orders online, they receive a confirmation number that they present to the food truck to receive their order.<p><br>
+<ul>
+  <li>Designed the user-interface for the application as well as facilitating the overall layout/structure of the application </li>
+  <li>Streamlined a consistent UI and Application theme within 2 days using Adobe Photoshop </li>
+</ul> 
+ </div>
         </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-3.gif" class="work-box"> <img src="images/work-3.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Drip Drop</h5>
-            <p>App Development in Java</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-4.gif" class="work-box"> <img src="images/work-4.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Toasted</h5>
-            <p>Game Development in C for GameBoy Advance Emulator</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-5.jpg" class="work-box"> <img src="images/work-5.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Seoulstice Korean Culture Club</h5>
-            <p>Graphic Design</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-6.jpg" class="work-box"> <img src="images/work-6.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-7.jpg" class="work-box"> <img src="images/work-7.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-8.jpg" class="work-box"> <img src="images/work-8.jpg" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-    </div>
-  </div>
-</section>
-<!-- portfolio section -->
-<!-- hire me section -->
-<section id="hireme" class="section hireme">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 text-center">
-      <h3>Need something specific?</h3>
-      <p>All the coding and details of my personal projects can be found on my Github.</p>
-      <a href="contact.html" class="btn btn-large">see Github</a> </div>
-  </div>
-</section>
-<!-- hire me section -->
-<!-- footer -->
-<footer class="section footer">
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="col-md-12">
-        <p>
-        <ul class="footer-share">
-          <li><a href="https://www.facebook.com/bryanna.lawton"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/dorkly/"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/oh_darlingx3/"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-        </p>
-        <p>© 2017 All rights reserved. All Rights Reserved<br>
-          Made with <i class="fa fa-heart pulse"></i> by <a href="http://www.designstub.com/">Designstub</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer -->
 
-<!-- JS FILES -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/retina.min.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/main.js"></script>
+        <div class="slide" id="slide3">
+          <img src="img/han.gif" alt="Hanstuff" float="right" width="500px" height="500px">
+            <div class="pcontainer">
+<h1 id="top">Hanstuff - Fall 2017  </h1>
+<i style="font-size: 20px">Creator , C </i><br>
+<br>
+<p style="font-size: 20px">A team-based class project of creating a water sourcing android application using Android studio. The app searched for fresh water and categorized it based on purity<p><br>
+<ul>
+  <li>Engineered the UI prototypes for the overall website in 3 days instead of the allotted 7</li>
+  <li>Assigned to work with an underperforming team member to motivate his improvement in efficiency; we completed a server system reconstruction in 2 weeks instead of the allotted 4. </li>
+
+</ul> 
+ </div>
+</div>
+
+        <div class="slide" id="slide4">
+            <img src="img/toast.gif" alt="Toasted" align="right" width="500px" height="500px">
+            <div class="pcontainer">
+<h1 id="top">Toasted - Fall 2017 </h1>
+<i style="font-size: 20px">Creator , C </i><br>
+<br>
+<p style="font-size: 20px">A gameboy videogame created in C programming<p><br>
+<ul>
+  <li>Designed the artwork,sprites </li>
+  <li>Created application logo and completed navigation menu in 2 weeks instead of the allotted 4</li>
+</ul> 
+ </div>
+        </div>
+
+        <div class="slide" id="slide5">
+ <img src="img/drop.gif" alt="Drip Drop" float="left">
+        <div class="pcontainer">
+<h1 id="top">Drip Drop - Spring 2016 </h1>
+<i style="font-size: 20px">UI/UX Designer, Front End / CS, Objects and Design </i><br>
+<br>
+<p style="font-size: 20px">A team-based class project of creating a water sourcing android application using Android studio. The app searched for fresh water and categorized it based on purity<p><br>
+<ul>
+  <li>Designed the user-interface for the whole application as well as facilitating the overall layout/structure of the application </li>
+  <li>Created application logo and completed navigation menu in 2 weeks instead of the allotted 4</li>
+</ul> 
+ </div>
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>Resume</h1>
+            <embed src="Bryanna.pdf" width="900" height="700" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="intro">
+            <h1>Contact</h1>
+            <ul>
+          <li><a href="https://www.facebook.com/bryanna.lawton"><img src="img/face.png" alt="Facebook"></i></a></li>
+          <li><a href="https://github.com/Dorkly"><img src="img/git.png" alt="Github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/dorkly/"><img src="img/link.png" alt="LinkedIn"></i></a></li>
+          <li><a href="https://www.instagram.com/oh_darlingx3/?hl=en"><img src="img/insta.png" alt="Instagram"</i></a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        //anchors: ['firstPage', 'secondPage', '3rdPage'],
+        //sectionsColor: ['#BB8FCE', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+
+    particleground(document.getElementById('section0'), {
+    dotColor: '#F4D03F',
+    lineColor: '#F9E79F'
+});
+
+</script>
+
 </body>
 </html>
